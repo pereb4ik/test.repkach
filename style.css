@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700');
+body{
+  font-family: 'Fira Sans';
+}
+article{
+  text-align: center;
+  display: block;
+  width: 10em;
+  margin: auto;
+  margin-top: 2em;
+  padding: 100px;
+  background: white;
+  box-shadow: 0em 0.08em 0.5em 0.2em rgba(0,0,0,0.4);
+}
+@keyframes shake {
+  0%   {top: 50px; left:0px;}
+  17%  {top: 0px; left:90px;}
+  33%  {top: 50px; left:180px;}
+  66%  {top: 50px; left:90px;}
+  100% {top: 50px; left:0px;}
+}
+/*animation-play-state: running;*/
+kek{
+  animation-timing-function: linear;
+  position: absolute;
+  top: 100px;
+  display: block;
+  width: 50px;
+  background: black;
+  height: 50px;
+  border-radius: 25px;
+  animation: shake 6s infinite;
+  animation-play-state: paused;
+}
+.logot{
+  display: block;
+  height: 100px;
+}
+.logot:hover kek{
+  animation-play-state: running;
+}
+/*
+.view h2 {
+  font-size: 3em;
+}
+.view p {
+  font-size: 5em;
+ font-family: Georgia, serif;
+}
+.view-first:hover h2,
+.view-first:hover p,{
+    font-size: 10em;
+}
+.view-first:hover p {
+   font-size: 10em;
+}
+.view-first:hover h2 {
+   font-size: 10em;
+}
+.view-first:hover a {
+   font-size: 10em;
+}
+*/
